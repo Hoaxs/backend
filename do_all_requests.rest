@@ -1,0 +1,69 @@
+GET http://localhost:3001/api/blogs
+
+###
+DELETE http://localhost:3001/api/blog/64bd0f09ab4d0d9f0d55075b
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type:application/json
+
+
+    {
+        "title":"Fictitous title",
+        "author":"Fictious author",
+        "url":"https://fictitious/blog/.html",
+        "likes": 150
+    }
+###
+PUT http://localhost:3001/api/blog/64c74e0041b899d56eda5a77
+Content-Type:application/json
+
+
+    {
+        "title":"Non existing title",
+        "author":"No author",
+        "url": "http://fanthom/link",
+        "likes": 1000
+    }
+###
+    POST http://localhost:3001/api/login
+Content-Type:application/json
+
+
+{
+    "username": "mluukkai",     
+    "password": "salainen"
+    
+}
+###
+POST http://localhost:3001/api/users
+Content-Type:application/json
+
+
+{
+    
+    "username": "Edsger",     
+    "password": "EdsW6667",
+
+}
+###
+POST http://localhost:3001/api/login
+Content-Type:application/json
+
+
+{
+    "name":"Edsger W.Dijkstra",
+    "username": "Edsger",     
+    "password": "EdsW6667"
+}
+###
+Post http://localhost:3001/api/blogs/67a3af9a32ec163fb3ac3d36/comments
+Content-Type:application/json
+
+
+
+    {
+       
+        "comments":"just what I needed"          
+        
+    }
